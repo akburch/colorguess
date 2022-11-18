@@ -5,7 +5,7 @@ How to use:
   cd colorguess
   npm start
 
-Noteable features:
+Notable features:
   Point counter stored in sessionStorage to save during game refreshes. The counter resets when the react session is restarted.
   
 Future plans:
