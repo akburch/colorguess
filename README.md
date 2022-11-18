@@ -6,7 +6,7 @@ How to use:
   npm start
 
 Noteable features:
-  Point counter stored in sessionStorage to save during game refreshes. The counter reset when the page is refreshed.
+  Point counter stored in sessionStorage to save during game refreshes. The counter resets when the react session is restarted.
   
 Future plans:
   Implement this in python so it launches a window with the same functionality.
