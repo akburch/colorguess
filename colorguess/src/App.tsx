@@ -31,11 +31,16 @@ function App() {
     function ansClicked(ans: string) {
         if (ans === color) {
             var numpoints = parseInt(points);
-            setWrong(false);
             sessionStorage.setItem('savedPoints', String(numpoints + 1));
+            points = sessionStorage.getItem('savedPoints');
             document.getElementById('pts').innerHTML = points;
+            setWrong(false);
             pick();
         } else {
+            var numpoints = parseInt(points);
+            sessionStorage.setItem('savedPoints', String(numpoints - 1));
+            points = sessionStorage.getItem('savedPoints');
+            document.getElementById('pts').innerHTML = points;
             setWrong(true);
             setChoice(ans);
         }
@@ -55,7 +60,8 @@ function App() {
                 {wrong && <div className="chosen" style={{background: choice}}></div>}
                 <div className="text">
                     <h1>Color Guessing Game</h1>
-                    <h2>Points: </h2>
+                    <h2>+1 for Correct guesses, -1 for Incorrect guesses</h2>
+                    <h3>Points: </h3>
                         <p id="pts"></p>
             </div>
         </div>

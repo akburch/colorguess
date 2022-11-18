@@ -31,18 +31,26 @@ body {
 }
 
 .text h2 {
+  color: gray;
+  position: absolute;
+  top: 2.5em;
+  left: 1em;
+  text-align: center;
+}
+
+.text h3 {
   color: white;
   position: absolute;
-  top: 3em;
-  left: 2em;
+  top: 6em;
+  left: 2.5em;
   text-align: center;
 }
 
 .text p {
   color: white;
   position: absolute;
-  top: 1em;
-  left: 4em;
+  top: 2em;
+  left: 3em;
   text-align: center;
   font-size: 40px;
 }
